@@ -1,0 +1,336 @@
+body
+{
+    background-color: dodgerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+
+}
+
+header
+{
+    background-color: #FF3D00;
+    border: 4px solid darkorange;
+    height: 150px;
+}
+
+header img
+{
+    width: 150px;
+    height: 150px;
+    text-align: left;
+    margin-left: 35px;
+    float: left;
+}
+
+header nav
+{
+    text-align: right;
+    margin-right: 35px;
+
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    color: white;
+    font-size: 110%;
+    border: 2px solid lightgray;
+}
+
+
+.encabezado
+{
+    background-image: url("../img/encabezado.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    text-align: left;
+}
+
+.encabezado h2
+{
+    margin: 0 auto;
+    margin-left: 15%;
+    padding-top: 3%;
+    text-transform: uppercase;
+    font-size: xx-large;
+
+}
+
+footer
+{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+footer nav
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+
+}
+
+footer nav ul li
+{
+    display: inline;
+    padding-right: 25px;
+
+}
+
+
+footer p
+{
+    text-align: right;
+    margin-right: 1%;
+}
+
+table
+{
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+td,
+th
+{
+    padding: 10px;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+tr
+{
+    height: 30px;
+    width: 20%;
+}
+
+tbody tr:hover
+{
+    background-color: dimgray;
+    color: #FFF;
+}
+
+th:hover
+{
+    background-color: #FF3D00;
+    cursor: pointer;
+}
+
+th:hover,
+tr:hover,
+.accion:hover,
+.eliminar:hover,
+.cancelar:hover
+{
+    cursor: pointer;
+
+}
+
+.accion:hover,
+.eliminar:hover,
+.cancelar:hover
+{
+    border: 2px solid white;
+}
+
+th
+{
+    text-transform: uppercase;
+}
+
+.filaPar
+{
+    background-color: white;
+}
+
+header h1,
+legend,
+.seccion-tabla h2
+{
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: darkorange;
+}
+
+main
+{
+    background-image: url("../img/fondo.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.seccion-formulario,
+.seccion-tabla
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 5%;
+
+}
+
+.seccion-tabla
+{
+    align-items: top;
+}
+
+.group-form
+{
+    background-color: dimgray;
+}
+
+.group-form .datos-form input,
+select
+{
+    border-radius: 5px;
+    width: 90%;
+    height: 20px;
+}
+
+.radioEditorial
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.input-img
+{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.input-img img
+{
+    padding-right: 10%;
+    padding-left: 5%;
+    width: 40px;
+    height: 40px;
+
+}
+
+.input-img input
+{
+    width: 50% !important;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.group-form h3
+{
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+
+#botonera
+{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+#botonera input
+{
+    margin: 5px;
+}
+
+
+fieldset
+{
+    border: 1px solid black;
+}
+
+#tabla span
+{
+    margin: 250px 500px;
+}
+
+.accion,
+.eliminar,
+.cancelar
+{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.accion
+{
+    background-color: greenyellow;
+}
+
+.eliminar
+{
+    background-color: #FF3D00;
+}
+
+.cancelar
+{
+    background-color: steelblue;
+}
+
+table,
+header h1,
+.group-form,
+#botonera input,
+.seccion-tabla h2
+{
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.loader
+{
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: darkorange;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
